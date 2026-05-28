@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowDesk — AI-Powered Project Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav id="nav">
+        <div class="wrap">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <span class="logo-name">FlowDesk</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#howitworks">How it Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="#" class="nav-login">Log in</a>
+                    <a href="#cta" class="btn btn-purple">Start Free Trial</a>
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#features" class="mlink">Features</a>
+            <a href="#howitworks" class="mlink">How it Works</a>
+            <a href="#pricing" class="mlink">Pricing</a>
+            <a href="#faq" class="mlink">FAQ</a>
+            <a href="#" class="mlink">Log in</a>
+            <a href="#cta" class="btn btn-purple mlink">Start Free Trial</a>
+        </div>
+    </nav>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero">
+        <div class="hero-mesh"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-orb"></div>
+        <div class="wrap">
+            <div class="hero-content">
+                <div class="hero-content-inner">
+                    <div class="hero-text">
+                        <div class="hero-badge"><span class="badge-dot"></span> Now with GPT-4 Turbo integration</div>
+                        <h1 class="hero-title">
+                            Project management<br>
+                            <span class="gradient-text">powered by AI</span>
+                        </h1>
+                        <p class="hero-sub">FlowDesk uses AI to automate your workflow, predict bottlenecks before they
+                            happen, and keep every team member aligned — all in one beautifully simple tool.</p>
+                        <div class="hero-cta">
+                            <a href="#cta" class="btn btn-purple btn-lg"><i class="fa-solid fa-bolt"></i> Start Free
+                                Trial</a>
+                            <a href="#features" class="btn btn-ghost btn-lg"><i class="fa-regular fa-play-circle"></i>
+                                Watch Demo</a>
+                        </div>
+                        <p class="hero-note"><i class="fa-solid fa-circle-check"></i> No credit card required
+                            &nbsp;·&nbsp; Free for 14 days &nbsp;·&nbsp; Cancel anytime</p>
+                        <div class="trust-badges" style="margin-top:36px">
+                            <div class="trust-badge">
+                                <span class="tb-icon"><i class="fa-solid fa-users"></i></span>
+                                <div>
+                                    <div class="tb-val">10K+</div>
+                                    <div class="tb-label">Active Users</div>
+                                </div>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="tb-icon"><i class="fa-solid fa-star"></i></span>
+                                <div>
+                                    <div class="tb-val">4.9★</div>
+                                    <div class="tb-label">Avg Rating</div>
+                                </div>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="tb-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                                <div>
+                                    <div class="tb-val">SOC2</div>
+                                    <div class="tb-label">Certified</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="dashboard-frame">
+                            <div class="dash-topbar">
+                                <div class="dash-dots">
+                                    <div class="dash-dot"></div>
+                                    <div class="dash-dot"></div>
+                                    <div class="dash-dot"></div>
+                                </div>
+                                <div class="dash-title">FLOWDESK — Q4 PRODUCT SPRINT</div>
+                            </div>
+                            <div class="dash-body">
+                                <div class="dash-cols">
+                                    <div>
+                                        <div class="dash-col-head">To Do <span class="dash-col-badge">4</span></div>
+                                        <div class="dash-card">
+                                            <div><span class="dash-card-tag tag-design">Design</span></div>
+                                            <div class="dash-card-title">Redesign onboarding flow</div>
+                                            <div class="dash-card-meta">
+                                                <div class="dash-avatars">
+                                                    <div class="dash-avatar" style="background:#7c3aed">S</div>
+                                                    <div class="dash-avatar" style="background:#2563eb">A</div>
+                                                </div>
+                                                <span class="dash-due">Nov 12</span>
+                                            </div>
+                                            <div class="dash-progress">
+                                                <div class="dash-progress-fill" style="width:30%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="dash-card">
+                                            <div><span class="dash-card-tag tag-dev">Dev</span></div>
+                                            <div class="dash-card-title">API rate limiting</div>
+                                            <div class="dash-card-meta">
+                                                <div class="dash-avatars">
+                                                    <div class="dash-avatar" style="background:#059669">K</div>
+                                                </div>
+                                                <span class="dash-due">Nov 15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="dash-col-head">In Progress <span class="dash-col-badge">3</span>
+                                        </div>
+                                        <div class="dash-card">
+                                            <div><span class="dash-card-tag tag-ai">AI</span></div>
+                                            <div class="dash-card-title">Smart deadline predictor v2</div>
+                                            <div class="dash-card-meta">
+                                                <div class="dash-avatars">
+                                                    <div class="dash-avatar" style="background:#b45309">M</div>
+                                                    <div class="dash-avatar" style="background:#7c3aed">S</div>
+                                                </div>
+                                                <span class="dash-due">Nov 10</span>
+                                            </div>
+                                            <div class="dash-progress">
+                                                <div class="dash-progress-fill" style="width:68%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="dash-card">
+                                            <div><span class="dash-card-tag tag-data">Data</span></div>
+                                            <div class="dash-card-title">Analytics export CSV</div>
+                                            <div class="dash-card-meta">
+                                                <div class="dash-avatars">
+                                                    <div class="dash-avatar" style="background:#0891b2">J</div>
+                                                </div>
+                                                <span class="dash-due">Nov 11</span>
+                                            </div>
+                                            <div class="dash-progress">
+                                                <div class="dash-progress-fill" style="width:85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="dash-col-head">Done <span class="dash-col-badge">6</span></div>
+                                        <div class="dash-card" style="opacity:.7">
+                                            <div><span class="dash-card-tag tag-design">Design</span></div>
+                                            <div class="dash-card-title">New component library</div>
+                                            <div class="dash-progress">
+                                                <div class="dash-progress-fill"
+                                                    style="width:100%;background:linear-gradient(90deg,#4ade80,#22c55e)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dash-card" style="opacity:.7">
+                                            <div><span class="dash-card-tag tag-dev">Dev</span></div>
+                                            <div class="dash-card-title">OAuth 2.0 integration</div>
+                                            <div class="dash-progress">
+                                                <div class="dash-progress-fill"
+                                                    style="width:100%;background:linear-gradient(90deg,#4ade80,#22c55e)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- floating cards -->
+                        <div class="ai-card">
+                            <div class="ai-icon"><i class="fa-solid fa-robot"></i></div>
+                            <div style="flex:1">
+                                <div class="ai-label">AI Analyzing Sprint</div>
+                                <div class="ai-sub">Predicting blockers...</div>
+                                <div class="ai-bar">
+                                    <div class="ai-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notif-card">
+                            <div class="notif-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <div class="notif-text">OAuth shipped ✓</div>
+                                <div class="notif-time">2 mins ago · by Kenji</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ LOGOS ══════════════ -->
+    <section id="logos">
+        <div class="wrap tc">
+            <p class="logos-label">Trusted by engineering teams at</p>
+            <div class="logos-track">
+                <span class="logo-item">Acme Corp</span>
+                <span class="logo-item">NovaTech</span>
+                <span class="logo-item">Stratify</span>
+                <span class="logo-item">BuildFast</span>
+                <span class="logo-item">Driftware</span>
+                <span class="logo-item">Zephyr HQ</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FEATURES ══════════════ -->
+    <section id="features">
+        <div class="wrap">
+            <div class="tc reveal">
+                <div class="chip"><i class="fa-solid fa-sparkles"></i> Features</div>
+                <h2 class="h2">Everything your team <span>needs to ship</span></h2>
+                <p class="sub">Six powerful capabilities working together so your team stops managing tools and starts
+                    delivering work.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="feat-title">AI Task Assistant</div>
+                    <p class="feat-desc">Auto-generate subtasks, write specs, and get AI suggestions on priorities based
+                        on your project history and deadlines.</p>
+                </div>
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="feat-title">Real-time Collaboration</div>
+                    <p class="feat-desc">Live cursors, instant comments, and conflict-free editing mean your team is
+                        always on the same page — literally.</p>
+                </div>
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                    <div class="feat-title">Smart Deadlines</div>
+                    <p class="feat-desc">AI learns your team's velocity and flags unrealistic timelines before they
+                        become misses, not after.</p>
+                </div>
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="feat-title">Analytics Dashboard</div>
+                    <p class="feat-desc">Burndown charts, cycle times, individual contribution heatmaps — every metric
+                        your retro needs, built in.</p>
+                </div>
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fa-solid fa-plug"></i></div>
+                    <div class="feat-title">100+ Integrations</div>
+                    <p class="feat-desc">Slack, GitHub, Figma, Notion, Jira, Linear — two-way sync so FlowDesk works
+                        with your stack, not against it.</p>
+                </div>
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <div class="feat-title">Mobile App</div>
+                    <p class="feat-desc">Full-featured iOS and Android apps. Approve, comment, and update tasks from
+                        anywhere with offline-first sync.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ HOW IT WORKS ══════════════ -->
+    <section id="howitworks">
+        <div class="wrap">
+            <div class="tc reveal">
+                <div class="chip"
+                    style="background:rgba(167,139,250,.1);color:#a78bfa;border-color:rgba(167,139,250,.2)">How it Works
+                </div>
+                <h2 class="h2" style="color:var(--white)">Up and running in <span>minutes</span></h2>
+                <p class="sub" style="color:rgba(255,255,255,.5)">No 40-page setup guide. No migration headaches. Just a
+                    faster team.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card reveal">
+                    <div class="step-num">
+                        <span class="step-num-label">1</span>
+                        <i class="fa-solid fa-plug step-icon"></i>
+                    </div>
+                    <div class="step-title">Connect your tools</div>
+                    <p class="step-desc">Link GitHub, Slack, Figma, and 97 other tools in one click. FlowDesk pulls in
+                        existing tasks and history automatically.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-num">
+                        <span class="step-num-label">2</span>
+                        <i class="fa-solid fa-wand-magic-sparkles step-icon"></i>
+                    </div>
+                    <div class="step-title">Assign & Automate</div>
+                    <p class="step-desc">Let AI suggest assignments based on workload and expertise. Set automation
+                        rules once — FlowDesk handles the rest.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-num">
+                        <span class="step-num-label">3</span>
+                        <i class="fa-solid fa-rocket step-icon"></i>
+                    </div>
+                    <div class="step-title">Track & Deliver</div>
+                    <p class="step-desc">Real-time dashboards, AI-powered risk alerts, and automated standups keep
+                        delivery on track every single sprint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ PRICING ══════════════ -->
+    <section id="pricing">
+        <div class="wrap">
+            <div class="tc reveal">
+                <div class="chip">Pricing</div>
+                <h2 class="h2">Simple, <span>transparent</span> pricing</h2>
+                <p class="sub">Start free, upgrade when your team needs more. No contracts, no surprises.</p>
+            </div>
+            <div class="price-toggle reveal">
+                <span class="toggle-text on" id="lbl-mo">Monthly</span>
+                <button class="toggle-wrap" id="pricingToggle" role="switch" aria-checked="false">
+                    <div class="toggle-knob"></div>
+                </button>
+                <span class="toggle-text" id="lbl-yr">Yearly</span>
+                <span class="save-pill">Save 20%</span>
+            </div>
+            <div class="pricing-grid reveal">
+                <!-- Starter -->
+                <div class="price-card">
+                    <div class="plan-name">Starter</div>
+                    <div class="plan-price">
+                        <span class="price-sym">$</span>
+                        <span class="price-amount price-num" data-mo="0" data-yr="0">0</span>
+                        <span class="price-period">/mo</span>
+                    </div>
+                    <div class="price-orig" id="orig-0">&nbsp;</div>
+                    <div class="price-divider"></div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Up to 3 projects</li>
+                        <li><i class="fa-solid fa-check"></i> 5 team members</li>
+                        <li><i class="fa-solid fa-check"></i> Basic AI suggestions</li>
+                        <li><i class="fa-solid fa-check"></i> 5 integrations</li>
+                        <li class="dim"><i class="fa-solid fa-xmark"></i> Analytics dashboard</li>
+                        <li class="dim"><i class="fa-solid fa-xmark"></i> Priority support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-outline plan-btn">Get started free</a>
+                </div>
+                <!-- Pro -->
+                <div class="price-card featured">
+                    <div class="popular-badge"><i class="fa-solid fa-bolt"></i> Most Popular</div>
+                    <div class="plan-name">Pro</div>
+                    <div class="plan-price">
+                        <span class="price-sym" style="color:var(--white)">$</span>
+                        <span class="price-amount price-num" data-mo="19" data-yr="15"
+                            style="color:var(--white)">19</span>
+                        <span class="price-period">/mo per user</span>
+                    </div>
+                    <div class="price-orig" id="orig-1">&nbsp;</div>
+                    <div class="price-divider"></div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Unlimited projects</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited members</li>
+                        <li><i class="fa-solid fa-check"></i> Full AI assistant</li>
+                        <li><i class="fa-solid fa-check"></i> 100+ integrations</li>
+                        <li><i class="fa-solid fa-check"></i> Analytics dashboard</li>
+                        <li class="dim"><i class="fa-solid fa-xmark"></i> Priority support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-white plan-btn">Start free trial</a>
+                </div>
+                <!-- Business -->
+                <div class="price-card">
+                    <div class="plan-name">Business</div>
+                    <div class="plan-price">
+                        <span class="price-sym">$</span>
+                        <span class="price-amount price-num" data-mo="49" data-yr="39">49</span>
+                        <span class="price-period">/mo per user</span>
+                    </div>
+                    <div class="price-orig" id="orig-2">&nbsp;</div>
+                    <div class="price-divider"></div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Everything in Pro</li>
+                        <li><i class="fa-solid fa-check"></i> Custom AI workflows</li>
+                        <li><i class="fa-solid fa-check"></i> SSO & advanced security</li>
+                        <li><i class="fa-solid fa-check"></i> Audit logs</li>
+                        <li><i class="fa-solid fa-check"></i> Analytics dashboard</li>
+                        <li><i class="fa-solid fa-check"></i> Priority support + SLA</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-outline plan-btn">Start free trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ TESTIMONIALS ══════════════ -->
+    <section id="testimonials">
+        <div class="wrap">
+            <div class="tc reveal">
+                <div class="chip">Testimonials</div>
+                <h2 class="h2">Loved by <span>engineering teams</span></h2>
+                <p class="sub">Real results from teams who switched to FlowDesk.</p>
+            </div>
+            <div class="testi-grid" style="margin-top:56px">
+                <div class="testi-card reveal">
+                    <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <p class="testi-text">"We cut our sprint planning meetings from 3 hours to 45 minutes. The AI
+                        deadline predictor alone has saved us from three major client escalations in two months."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar"
+                            style="background:linear-gradient(135deg,var(--purple-light),var(--indigo))">R</div>
+                        <div>
+                            <div class="testi-name">Rachel Kim</div>
+                            <div class="testi-role">VP Engineering · Stratify</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal">
+                    <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <p class="testi-text">"I've evaluated Jira, Linear, Asana, and Monday. FlowDesk is the first tool
+                        where the AI actually does something useful instead of just existing as a feature checkbox."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#0891b2,#0e7490)">D</div>
+                        <div>
+                            <div class="testi-name">Daniel Osei</div>
+                            <div class="testi-role">CTO · BuildFast</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal">
+                    <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <p class="testi-text">"Our team is fully remote across 4 timezones. The real-time collab features
+                        and async AI standup summaries have made FlowDesk the single source of truth we were missing."
+                    </p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#16a34a,#15803d)">A</div>
+                        <div>
+                            <div class="testi-name">Amara Solis</div>
+                            <div class="testi-role">Team Lead · NovaTech</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FAQ ══════════════ -->
+    <section id="faq">
+        <div class="wrap">
+            <div class="tc reveal">
+                <div class="chip">FAQ</div>
+                <h2 class="h2">Questions? <span>We've got answers</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item open reveal">
+                    <div class="faq-q">How does the AI task assistant work?<div class="faq-chevron"><i
+                                class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Our AI is trained on millions of software projects and your own team's
+                            historical patterns. It learns your velocity, writing style, and workflow to generate
+                            relevant subtasks, flag risks, and suggest priorities. It gets smarter the more you use it —
+                            no configuration required.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-q">Is my data private and secure?<div class="faq-chevron"><i
+                                class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Yes. FlowDesk is SOC2 Type II certified and GDPR compliant. Your data
+                            is encrypted at rest (AES-256) and in transit (TLS 1.3). We never train our AI on your
+                            private project data, and you can export or delete all data at any time.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-q">Can I migrate from Jira, Linear, or Asana?<div class="faq-chevron"><i
+                                class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Absolutely. We offer one-click imports from Jira, Linear, Asana,
+                            Monday.com, Trello, and Notion. Your full task history, attachments, comments, and custom
+                            fields migrate automatically. Most teams are fully migrated in under 20 minutes.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-q">How does the free trial work?<div class="faq-chevron"><i
+                                class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">You get 14 days of full Pro access — no credit card required. At the
+                            end of the trial you choose a plan or drop to the free Starter tier. Nothing is deleted;
+                            your projects and data are always yours. No auto-charge surprises.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-q">What happens if I exceed my plan limits?<div class="faq-chevron"><i
+                                class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">We'll notify you before you hit limits, not after. On the Starter plan
+                            you'll get an upgrade prompt, but nothing stops working mid-sprint. On paid plans, you can
+                            enable auto-scale with a spending cap so you're never blocked and never surprised.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ CTA ══════════════ -->
+    <section id="cta">
+        <div class="cta-mesh"></div>
+        <div class="wrap">
+            <div class="cta-inner reveal">
+                <div class="chip"
+                    style="background:rgba(167,139,250,.15);color:#a78bfa;border-color:rgba(167,139,250,.2)"><i
+                        class="fa-solid fa-rocket"></i> Get started today</div>
+                <h2 class="cta-title">Your team deserves<br>better tools. <span>Full stop.</span></h2>
+                <p class="cta-sub">Join 10,000+ engineering teams who ship faster, argue less, and actually enjoy
+                    planning sprints.</p>
+                <div class="cta-form">
+                    <input class="cta-input" type="email" id="ctaEmail" placeholder="Enter your work email" />
+                    <button class="btn btn-purple" id="ctaBtn" style="flex-shrink:0"><i class="fa-solid fa-bolt"></i>
+                        Start Free Trial</button>
+                </div>
+                <div class="cta-ok" id="ctaOk"><i class="fa-solid fa-circle-check"></i> You're in! Check your email to
+                    get started.</div>
+                <p class="cta-note"><i class="fa-solid fa-circle-check"></i> Free 14-day trial &nbsp;·&nbsp; No credit
+                    card &nbsp;·&nbsp; Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo" style="margin-bottom:14px;display:flex">
+                        <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <span class="logo-name" style="color:var(--white)">FlowDesk</span>
+                    </a>
+                    <p>AI-powered project management for teams who care about shipping, not managing tools.</p>
+                    <div class="ft-socials">
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                        <li><a href="#">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 FlowDesk, Inc. All rights reserved.</span>
+                <span>Designed by <a href="#">Kerolos</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══════════════ JAVASCRIPT ══════════════ -->
+    <script src="script.js"></script>
+</body>
+
+</html>
